@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel= "stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body>
+        <!-- Navigation Bar -->
+        <nav class="nav-bar" aria-labelledby="navigation bar">
+            <div class="nav-box">
+                <!-- Logo/home page reset -->
+                <a href=#home aria-labelledby="Landing page link">
+                    <li style="font-size: 35px; margin-top: 1px; margin-left: 20px;">KM</li>
+                </a>
+             <ul>
+                <!-- Links to scroll to respective areas on page -->
+                 <a href=#design aria-labelledby="Design projects link">
+                    <li>Projects</li>
+                 </a>
+                 <a href=#bio aria-labelledby="About me link">
+                    <li>About</li>
+                 </a>
+                 <a href=#resume aria-labelledby="Resume link"> 
+                    <li>Resume</li>
+                 </a>
+                 <a href=#contact aria-labelledby="Contact me link">
+                    <li>Contact</li>
+                 </a>
+            </ul> 
+            </div>
+        </nav>
+
+        <!-- Invisible scroll marker to indicate position to scroll to from direct link -->
+        <div class="scroll-marker-one" id="home"></div>
+        <main>
+            <!-- Large landing page introduction box -->
+            <div class="intro-box" aria-labelledby="Landing page introduction">
+                <div class="profile-info">
+                    <!-- Greeting -->
+                    <div class="profile-hello">
+                        <p>Hi, I'm <span style="color: tomato">Khizr!</span></p>
+                    </div>
+                    <!-- Quick introduction -->
+                    <div class="profile-des">
+                        <p>I'm a Chicago-based <span style="color: tomato; font-weight: bold;"> product designer</span>
+                         studying Manufacturing and Design Engineering at Northwestern University. I strive
+                        to create products that are beautiful, disruptive, and have 
+                        <span style="color: tomato; font-weight: bold;"> genuine positive impact </span>on their
+                        user's lives </p>
+                    </div>
+                    <!-- Button that acts as a "gate" to the rest of the site-- just scrolls down to next section -->
+                    <a class="profile-button" href=#design style="text-decoration: none;">
+                        <p>&#9662</p>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Invisible scroll marker to indicate position to scroll to from direct link -->
+            <div class="scroll-marker-one" id="design"></div>
+            <!-- Section title -->
+            <div class="subheadings" aria-labelledby="Design Projects heading">
+                <p> Design Projects</p>
+            </div>
+            <!-- Flex box to contain 2 horizontally aligned images for projects-->
+            <div class="wide-image-box">
+                <!-- First project (City Health Tech) -->
+                <a href="project1.html">
+                    <div class="image-box" aria-labelledby="City health tech project">
+                        <img src="Images/cht.jpeg" alt="City Health Tech: Opal on sink ">
+                        <div class="image-desc">
+                            <p>City Health Tech</p>
+                        </div>
+                    </div>
+                </a>
+                <!-- 2nd Project, links to blank page-->
+                <a href="project2.html">
+                    <div class="image-box" aria-labelledby="NUSolar project">
+                        <img src="Images/car.jpg" alt="NUSolar car concept">
+                        <div class="image-desc">
+                            <p>NUSolar</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!-- Flex box to contain 2 horizontally aligned images for projects-->
+            <div class="wide-image-box">
+                <!-- 3rd project, links to blank page -->
+                <a href="project2.html">
+                    <div class="image-box" aria-labelledby="Solidworks project">
+                        <img src="Images/solid.jpg" alt="Tide bottle solidworks model">
+                        <div class="image-desc">
+                            <p>Solidworks</p>
+                        </div>
+                    </div>
+                </a>
+                <!-- 4th project, links to blank page -->
+                <a href="project2.html">
+                    <div class="image-box" aria-labelledby="Renders project">
+                        <img src="Images/render.jpg" alt="Bottle cap render">
+                        <div class="image-desc">
+                            <p>Renders</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Invisible scroll marker to indicate position to scroll to from direct link -->
+            <div class="scroll-marker" id="bio"></div>
+            <!-- Section title -->
+            <div class="subheadings" aria-labelledby="About Me heading">
+                <p>About Me<p>
+            </div>
+            <!-- Flex box containing profile pic + text, horizontally aligned -->
+            <div class="bio-box">
+                <!-- Profile picture -->
+                <div class="bio-pic">
+                    <img src="Images/profile.jpg">
+                </div>
+                <!-- About me text -->
+                <div class="bio-text" aria-labelledby="Bio">
+                    <p>I’m a student at Northwestern University studying manufacturing and design engineering. Growing up in Karachi, Pakistan, 
+                        I was surrounded by music, culture, and art, and gaining a technical education to balance my creative side has established an 
+                        outlet for my work through design. Excited by the breadth of opportunity within the umbrella term that is ‘design', I strive 
+                        to use the field for aesthetic expression with roots grounded in humanity; I’d like make things that not only look good, but bring 
+                        robust functionality to genuinely improve the lives of their users.</p>
+                    <p>Coming to the US has made me aware of the incredible privilege I have as an international student from a 3rd world country with 
+                        access to the best possible education—I’ve promised myself I will use this privilege to better the world around me regardless 
+                        of where I am. In my free time I enjoy sketching, walking outdoors, and playing the ukulele and guitar!</p>
+                </div>
+            </div>
+
+            <!-- Invisible scroll marker to indicate position to scroll to from direct link -->
+            <div class="scroll-marker" id="resume"></div>
+            <!-- Section title -->
+            <div class="subheadings" aria-labelledby="Professional Information heading">
+                <p>Professional Information<p>
+            </div>
+            <!-- Flex box that centers and vertically aligns content -->
+            <div class="resume-box">
+                <div class="resume-text" aria-labelledby="Job search description">
+                    <p>I am currently in the job market seeking <span style="color: tomato; font-weight: bold;">Summer 2021 Internships</span> for 
+                        <span style="color: tomato; font-weight: bold;">Product Design and Innovation</span>
+                        positions. Here's my resume for your perusal.
+                    </p>
+                </div>
+                <!-- Button that links to resume pdf file, opens in new tab -->
+                <a style="text-decoration: none" href="resume.pdf" target="_blank">
+                    <div class="resume-button" aria-labelledby="Resume pdf link">
+                        <p>RESUME</p>
+                    </div>
+                </a>
+            </div> 
+
+            <!-- Invisible scroll marker to indicate position to scroll to from direct link -->
+            <div class="scroll-marker-one" id="contact"></div>
+            <!-- Section title -->
+            <div class="subheadings" aria-labelledby="Contact heading">
+                <p>Get in touch!<p>
+            </div>
+            <!-- Flex box that horizonatlly aligns the email form (right) and "get in touch" text (left) -->
+            <div class="contact-container">
+                <!-- Creates form that sends out an email to my email address -->
+                 <form action="mailto:khizrmaqsood@u.northwestern.edu" method="post" enctype="text/plain" aria-labelledby="Email contact form">
+                    Job Title <br>
+                    <!-- Dropdown selection menu so I know who is emailing me -->
+                    <select id="title" name="title">
+                        <option value="select">Select...</option>
+                        <option value="student">Student</option>
+                        <option value="recruiter">Recruiter</option>
+                        <option value="executive">Executive</option>
+                        <option value="other">Other</option>
+                    </select><br><br>
+                    <!-- First name -->
+                    First Name: <br><input type="text" name="name" placeholder="Your first name.."><br><br>
+                    <!-- Last name -->
+                    Last Name: <br><input type="text" name="name" placeholder="Your last name.."><br><br>
+                    <!-- Sender's email address, is validated as an email address by requiring an "@" symbol -->
+                    E-mail: <br><input type="email" name="mail" placeholder="Your email.."><br><br>
+                    <!-- Sender's message -->
+                    Message: <br><input type="text" name="message" size="50" placeholder="Your message.."><br><br>
+                    <!-- Send button, sends email -->
+                    <input type="submit" value="SEND" aria-labelledby="Send button">
+                    <!-- Reset button, resets the entire form -->
+                    <input type="reset" value="RESET" aria-labelledby="Reset button">
+                 </form>
+                 <!-- Flex box, vertically aligned so that the text is above the logos -->
+                 <div class="contact-box" aria-labelledby="Contact me message">
+                     <p>Feel free to send me an email or reach out on any of my socials!</p>
+                     <!-- Flex box to arrange the logos horizontally in a row -->
+                     <div class="icons-box" aria-labelledby="Social media links">
+                         <!-- Logos that link to external social media sites and email client -->
+                        <a href="https://www.facebook.com/vindiesel" class="fa fa-facebook" target="_blank"></a>
+                        <a href="mailto:khizrmaqsood@u.northwestern.edu" class="fa fa-envelope" target="_blank"></a>
+                        <a href="https://www.twitter.com/northwesternu" class="fa fa-twitter" target="_blank"></a>
+                        <a href="https://www.linkedin.com/in/khizr-maqsood-10a835186/" class="fa fa-linkedin" target="_blank"></a>
+                     </div>
+                 </div>
+            </div>
+
+            <!-- Footer with name and basic contact information -->
+            <div class="footer" aria-labelledby="Basic information footer">
+                <p>Khizr Maqsood 2020</p>
+                <p>+1(224)420-0927 | khizrmaqsood@gmail.com</p>
+            </div>
+        </main>
+    </body>
+</html>

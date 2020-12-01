@@ -1,0 +1,599 @@
+html {
+    /* Makes the webpage scroll smoothly */
+    scroll-behavior: smooth;
+}
+
+/* Invisible marker that I've placed above sections to mark where to scroll to */
+/* This makes enough space between itself and the section title so that the title is visible
+below the nav bar*/
+.scroll-marker {
+    height: 1px;
+    position: absolute;
+    width:50px;
+    margin-top: -40px;
+    margin-bottom: 0%;
+}
+
+/* Unique scroll marker with margins for two sections due to spacing differences */
+.scroll-marker-one {
+    height: 1px;
+    width:50px;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+/* Navigation bar */
+nav.nav-bar {
+    background-color: #3f3f3f;
+    position: fixed;
+    height: 40px;
+    z-index: 2;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    box-shadow: 0px 4px 10px #0003;
+}
+
+main {
+    margin-top: 75px;
+    text-align: center;
+}
+
+/* Flex box that arranges navigation list elements in a row */
+.nav-box{
+	display: flex;
+    flex-direction: row;
+    justify-content: right;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: tomato;
+}
+
+/* Text styling for nav bar */
+.nav-box p{
+    margin-top: 7px;
+    margin-left: 10px;
+    font-size: 24px;
+}
+
+nav.nav-bar ul{
+    margin-left: 900px;
+    justify-content: center;
+    margin-top: 0px;
+}
+
+/* List elements in navigation bar */
+nav.nav-bar li {
+    font-family: sans-serif;
+    font-weight: bold;
+    color: white;
+    font-size: 15px;
+    margin-left: 40px;
+    display: inline-block;
+    margin-top: 10px;
+    position: relative;
+}
+
+/* Changes color when hovering over nav bar elements */
+nav.nav-bar li:hover {
+    color: tomato;
+    transition: 0.25s;
+}
+
+/* Large landing page introduction box */
+.intro-box{
+    margin-top: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    background-color: #ededed;
+    /* border radius creates friendly aesthetic */
+    border-radius: 20px;
+    justify-content: center;
+    /* geometric pattern background image, used throughout website */
+    background-image: url(Images/background.png);
+}
+
+/* Flex box to vertically arrange elements in intro box */
+.profile-info{
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+}
+
+/* Styling for "Hi, I'm Khizr!" */
+.profile-hello{
+    font-size: 120px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+/* Styling for quick introduction */
+.profile-des{
+    margin-top: -80px;
+    font-size: 25px;
+    font-weight: lighter;
+    font-family: sans-serif;
+    color: black;
+    text-align: center;
+}
+
+/* Styling for profile button that links to design projects */
+.profile-button {
+    width: 60px;
+    height: 40px;
+    border-radius: 40px;
+    border-style: solid;
+    border-color: black;
+    align-self: center;
+}
+
+/* Down arrow button styling */
+.profile-button p{
+    margin-top: -12px;
+    font-size: 50px;
+    font-weight: bold;
+    color: black;
+}
+
+/* Changes buttoncolor/transitions when hovered on */
+.profile-button:hover{
+    width: 80px;
+    background-color: tomato;
+    border-color: white;
+    transition: 0.25s;
+}
+
+/* Changes arrow color in button */
+.profile-button:hover p{
+    color: white;
+}
+
+
+/* Styling for all the section headings */
+.subheadings {
+    margin-top: 40px;
+    margin-right: 500px;
+    margin-left: 500px;
+    border-radius: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: gray;
+}
+
+/* Horizontally arranged flex box for 2 project images */
+.wide-image-box{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    justify-content: center;
+}
+
+/* Styling for project image + title */
+.image-box{
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 600px;
+    height: 300px;
+    font-size: 30px;
+    color: white;
+    text-align: left;
+    text-indent: 30px;
+    border-radius: 25px;
+}
+
+/* Styling for project image, fits exactly over image-box */
+.image-box img{
+    width: 600px;
+    height: 300px;
+    border-radius: 25px;
+}
+
+/* Stlying for project title  */
+.image-desc{
+    opacity: 0%;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    font-weight: bold;
+    color: black;
+    position: absolute;
+    width: 600px;
+    height: 300px;
+    border-radius: 25px;
+}
+
+/* Displays project title upon hovering, smooth transition */
+.image-box:hover .image-desc{
+    opacity: 80%;
+    transition: .25s;
+}
+
+/* Horizontal flex box for bio */
+.bio-box{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    height: 450px;
+    background-color: #ededed;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    background-image: url(Images/background.png);
+}
+/* Used to set location for profile pic */
+.bio-pic{
+    width: 350px;
+    height: 350px;
+    margin-right: 20px;
+    border-radius: 175px;
+    background-color: tomato;
+}
+
+/* Styling for profile pic, makes it a circle */
+.bio-pic img{
+    width: 350px;
+    height: 350px;
+    border-radius: 175px;
+}
+
+/* About me bio description styling */
+.bio-text{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-weight: lighter;
+    font-family: sans-serif;
+    width: 800px;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+/* Vertical flex box to arrange resume section elements */
+.resume-box{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    height: 300px;
+    background-color: #ededed;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    background-image: url(Images/background.png);
+}
+
+/* Styling for text */
+.resume-text{
+    font-size: 25px;
+    width: 1200px;
+    font-weight: lighter;
+    font-family: sans-serif;
+    color: black;
+    text-align: center;
+}
+
+/* Styling for resume button which links to resume pdf */
+.resume-button{
+    width: 150px;
+    height: 40px;
+    border-radius: 40px;
+    border-style: solid;
+    border-color: black;
+}
+
+/* Styling for resume button text */
+.resume-button p{
+    margin-top: 10px;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    text-decoration: solid;
+}
+
+/* Changes color of button upon hovering */
+.resume-button:hover {
+    background-color: tomato;
+    border-color: white;
+    transition: .25s;
+    width: 180px;
+    color: white;
+}
+
+.resume-button:hover p{
+    color: white;
+    transition: .25s;
+}
+
+/* Horizontal flex box that horizonatlly aligns the email form (right) and "get in touch" text (left) */
+.contact-container{
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    margin-top: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
+    height: 600px;
+    background-color: #ededed;
+    border-radius: 20px;
+    align-items: center;
+    background-image: url(Images/background.png);
+    font-family: sans-serif;
+    font-size: 24px;
+    font-weight: lighter;
+}
+
+/* Styles the form for input sections with text responses*/
+input[type=text] {
+    background-color: #ffffff;
+    font-family: sans-serif;
+    font-weight: lighter;
+    color: #3f3f3f;
+    height: 30px;
+    border-radius: 10px;
+    font-size: 18px;
+    border-style: hidden;
+}
+
+/* Like above, this tyles the form for input sections with email inputs (only one)*/
+input[type=email] {
+    background-color: #ffffff;
+    font-family: sans-serif;
+    font-weight: lighter;
+    color: #3f3f3f;
+    height: 30px;
+    border-radius: 10px;
+    font-size: 18px;
+    border-style: hidden;
+}
+
+/* Styles dropdown selection elements */
+select[id=title]{
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: white;
+    border-style: hidden;
+    font-family: sans-serif;
+    font-weight: lighter;
+    color: #3f3f3f;
+    font-size: 18px;
+}
+
+/* Adjusts width for email input zone */
+input[name=mail]{
+    width: 300px;
+}
+
+/* Adjusts width for message input zone */
+input[name=message]{
+    height: 80px;
+}
+
+/* Adds spacing consistent with the rest of the website*/
+form {
+    margin-left: 50px;
+}
+
+/* Styling for SEND button */
+input[type=submit]{
+    width: 100px;
+    height: 40px;
+    border-radius: 40px;
+    border-style: solid;
+    border-color: black;
+}
+
+/* Styling for SEND button text */
+input[value=SEND]{
+    margin-top: 10px;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    text-decoration: solid;
+}
+
+/* Changes SEND button appearance upon hovering */
+input[type=submit]:hover {
+    background-color: tomato;
+    border-color: white;
+    transition: .25s;
+    color: white;
+}
+
+/* Changes SEND button tezt appearance upon hovering */
+input[value=SEND]:hover {
+    color: white;
+    width: 120px;
+    transition: .25s;
+}
+
+/* Styling for RESET button */
+input[type=reset]{
+    width: 100px;
+    height: 40px;
+    border-radius: 40px;
+    border-style: solid;
+    border-color: black;
+}
+
+/* Styling for RESET button text */
+input[value=RESET]{
+    margin-top: 10px;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    text-decoration: solid;
+}
+
+/* Changes RESET button appearance upon hovering */
+input[type=reset]:hover {
+    background-color: tomato;
+    border-color: white;
+    transition: .25s;
+    color: white;
+}
+
+/* Changes RESET button tezt appearance upon hovering */
+input[value=RESET]:hover {
+    color: white;
+    width: 120px;
+    transition: .25s;
+}
+
+/* Vertical lex box for contact me text, puts logos below text */
+.contact-box{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    width: 750px;
+    font-size: 24px;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+/* Horizontal flex box that arranges social media logos in a row */
+.icons-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* Adds space between the logos */
+.icons-box .fa{
+    margin-left: 20px;
+}
+
+/* Styling for footer text */
+.footer{
+    font-size: 12px;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* ICONS */
+/* Icon styling, makes them all rounded squares */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 25px;
+    border-radius: 12px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Changes icon appearance upon hover */
+.fa:hover {
+    opacity: 70%;
+    transition: 0.25s;
+}
+
+/* Facebook icon styling */
+.fa-facebook {
+background: #3B5998;
+color: white;
+}
+
+/* Twitter icon styling */
+.fa-twitter {
+background: #55ACEE;
+color: white;
+}
+
+/* Linkedin icon styling */
+.fa-linkedin{
+background: #0077b5;
+color: white;
+}
+
+/* Email icon styling */
+.fa-envelope{
+background: tomato;
+color: white;
+}
+
+/* ----------------PROJECTS STYLING ---------------------*/
+/* For the project pages linked from the main page */
+
+/* Large CIty Health Tech title styling */
+.project-title{
+    font-size: 48px;
+    text-align: left;
+    font-weight: bold;
+    font-family: sans-serif;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+/* Header City Health Tech description */
+.project-description{
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-top: -30px;
+    font-size: 18px;
+    text-align: left;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 40px;
+}
+
+/* Horizontal flex box to align image and text */
+.proj-container-one {
+    display: flex;
+    flex-direction: row;
+    margin-left: 50px;
+    margin-right: 50px;
+    height: 400px;
+    align-items: center;
+}
+
+/* Sizes image in this box */
+.proj-container-one img{
+    height: 400px;
+    width: 600px;
+}
+
+/* Styles text in this box */
+.proj-text-box-1 {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    font-weight: lighter;
+    font-family: sans-serif;
+    text-align: left;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+/* Large banner image styling */
+.big-image {
+    margin-top: 40px;
+    width: 1325px;
+    height: 600px;
+}
+
+/* Box for styling text below image */
+.proj-text-box-2{
+    font-size: 18px;
+    font-weight: lighter;
+    font-family: sans-serif;
+    text-align: left;
+    margin-left: 50px;
+    margin-right: 50px;
+}
